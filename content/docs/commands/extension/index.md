@@ -2,8 +2,6 @@
 title: Extension Commands
 ---
 
-# Extension
-
 ## extension validate
 
 Validate extension for store compliance

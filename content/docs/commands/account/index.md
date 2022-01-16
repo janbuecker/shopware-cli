@@ -2,8 +2,6 @@
 title: Account Commands
 ---
 
-# Account
-
 ### account login
 
 This command can be used to log in into your Shopware account. If you are in multiple companies, see `Account Company Use` command
