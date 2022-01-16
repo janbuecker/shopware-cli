@@ -32,7 +32,7 @@ Additional properties are not allowed.
 <a name="reference-shopware-cli"></a>
 ## shopware-cli
 
-Shopware cli extension configuration definition file
+shopware cli extension configuration definition file
 
 
 
