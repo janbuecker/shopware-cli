@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Account Commands - Docs of shopware cli</title>
+<title>Extension Commands - Docs of shopware cli</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=icon href=http://sw-cli.fos.gg/favicon.png>
 <link rel=stylesheet href=/css/style.min.6719d72e323121369d5caeb4264b95d8a63cf1deaab029da67602fe5a046e0a4.css>
@@ -59,10 +59,10 @@
 <div class=docs-menu>
 <h4>Docs</h4>
 <ul>
-<li class=active>
+<li>
 <a href=http://sw-cli.fos.gg/docs/commands/account/>Account Commands</a>
 </li>
-<li>
+<li class=active>
 <a href=http://sw-cli.fos.gg/docs/commands/extension/>Extension Commands</a>
 </li>
 <li>
@@ -73,49 +73,26 @@
 </div>
 </div>
 <div class="col-12 col-md-9">
-<h1 class=title>Account Commands</h1>
+<h1 class=title>Extension Commands</h1>
 <div class="content anchor-link-enabled">
-<h1 id=account>Account</h1>
-<h3 id=account-login>account login</h3>
-<p>This command can be used to log in into your Shopware account. If you are in multiple companies, see <code>Account Company Use</code> command</p>
-<h3 id=account-logout>account logout</h3>
-<p>Logout from your Account</p>
-<h3 id=account-company-list>account company list</h3>
-<p>List all your companies</p>
-<h3 id=account-company-use>account company use</h3>
-<p>Switch the active company.</p>
+<h1 id=extension>Extension</h1>
+<h2 id=extension-validate>extension validate</h2>
+<p>Validate extension for store compliance</p>
 <p>Parameters:</p>
 <ul>
-<li>Company ID - Can be obtained by `account company list`</li>
+<li>path - Path to zip or extension folder</li>
 </ul>
-<h3 id=account-producer-info>account producer info</h3>
-<p>Lists some basic information about the logged in producer</p>
-<h3 id=account-producer-extension-list>account producer extension list</h3>
-<p>Lists all your extensions in the account</p>
-<h3 id=account-producer-extension-create>account producer extension create</h3>
-<p>Creates an extension</p>
+<h2 id=extension-prepare>extension prepare</h2>
+<p>Installs composer dependencies of the extension</p>
 <p>Parameters:</p>
 <ul>
-<li>name - Your extension name</li>
-<li>generation - classic, platform, apps, themes</li>
+<li>path - Path to extension folder</li>
 </ul>
-<h3 id=account-producer-extension-delete>account producer extension delete</h3>
-<p>Deletes an extension</p>
+<h2 id=extension-zip>extension zip</h2>
+<p>Creates a zip file from extension folder</p>
 <p>Parameters:</p>
 <ul>
-<li>name - Your extension name</li>
-</ul>
-<h3 id=account-producer-extension-info-pull>account producer extension info pull</h3>
-<p>Downloads the store page information to the given extension</p>
-<p>Parameters:</p>
-<ul>
-<li>path - Extension folder path</li>
-</ul>
-<h3 id=account-producer-extension-info-push>account producer extension info push</h3>
-<p>Uploads the local store page information</p>
-<p>Parameters:</p>
-<ul>
-<li>path - Extension folder path</li>
+<li>path - Path to extension folder</li>
 </ul>
 </div>
 </div>
