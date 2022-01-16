@@ -1,5 +1,5 @@
 ---
-title: 'Schema of .shopware-extensions.yml'
+ title: 'Schema of .shopware-extensions.yml' 
 ---
 
 # Objects
@@ -271,7 +271,3 @@ Additional properties are not allowed.
 
 * **Type**: `string`
 * **Required**:  &#10003; Yes
-
-
-
-
