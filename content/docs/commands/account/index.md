@@ -1,5 +1,5 @@
 ---
-description: This page covers all the account commands
+title: account commands
 ---
 
 # Account

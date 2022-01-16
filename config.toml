@@ -1,0 +1,53 @@
+baseURL = 'http://sw-cli.fos.gg/'
+languageCode = 'en-us'
+title = 'Docs of shopware cli'
+themesDir = "themes"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 2
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/docs'
+  homepage_button_text = 'Read The Docs'
+  homepage_intro = ''
+  homepage_image = ''
+
+  ## You can enable to add anchor links to header elements
+  enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "A CLI which contains handy helpful commands for daily Shopware tasks"
+    meta_og_title = "Docs for shopware cli"
+    meta_og_type = "website"
+    meta_og_url = "https://fos-cli.fos.gg"
+    meta_og_image = ""
+    meta_og_description = "A CLI which contains handy helpful commands for daily Shopware tasks"
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@ShopwareFriends"
+    meta_twitter_creator = "@ShopwareFriends"
+
+  [params.logo]
+      mobile = "/images/logo-mobile.svg"
+      standard  = "/images/logo.svg"

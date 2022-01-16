@@ -1,5 +1,5 @@
 ---
-description: A CLI which contains handy helpful commands for daily Shopware tasks
+title: A CLI which contains handy helpful commands for daily Shopware tasks
 ---
 
 # Shopware CLI

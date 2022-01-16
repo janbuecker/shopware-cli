@@ -1,3 +1,7 @@
+---
+title: 'Schema of .shopware-extensions.yml'
+---
+
 # Objects
 * [`.shopware-extension.yml`](#reference-config) (root object)
 * [`store`](#reference-store)
