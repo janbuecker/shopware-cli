@@ -5,6 +5,6 @@ account company use Switch the active company.
 Parameters:
 Company ID - Can be obtained by `account company list` account producer info Lists some basic information about the logged in producer</description></item><item><title>Schema of .shopware-extensions.yml</title><link>http://sw-cli.fos.gg/docs/shopware-extensions.yml-schema/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://sw-cli.fos.gg/docs/shopware-extensions.yml-schema/</guid><description>Objects .shopware-extension.yml (root object) store StoreInfoFaqQuestion .shopware-extension.yml .shopware-extension.yml Properties
 Type Description Required store Store No Additional properties are not allowed.
-Config.store Type: Store Required: No shopware-cli Shopware cli extension configuration definition file
+Config.store Type: Store Required: No shopware-cli shopware cli extension configuration definition file
 store store Properties
 Type Description Required icon string Specifies the Path to the icon (128x128 px) for store.</description></item></channel></rss>
