@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A CLI which contains handy helpful commands for daily Shopware tasks on Docs of shopware cli</title><link>http://sw-cli.fos.gg/</link><description>Recent content in A CLI which contains handy helpful commands for daily Shopware tasks on Docs of shopware cli</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://sw-cli.fos.gg/index.xml" rel="self" type="application/rss+xml"/><item><title>account commands</title><link>http://sw-cli.fos.gg/docs/commands/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://sw-cli.fos.gg/docs/commands/account/</guid><description>Account account login This command can be used to log in into your Shopware account. If you are in multiple companies, see Account Company Use command
+account logout Logout from your Account
+account company list List all your companies
+account company use Switch the active company.
+Parameters:
+Company ID - Can be obtained by `account company list` account producer info Lists some basic information about the logged in producer</description></item><item><title>Schema of .shopware-extensions.yml</title><link>http://sw-cli.fos.gg/docs/shopware-extensions.yml-schema/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://sw-cli.fos.gg/docs/shopware-extensions.yml-schema/</guid><description>Objects .shopware-extension.yml (root object) store StoreInfoFaqQuestion .shopware-extension.yml .shopware-extension.yml Properties
+Type Description Required store Store No Additional properties are not allowed.
+Config.store Type: Store Required: No shopware-cli Shopware cli extension configuration definition file
+store store Properties
+Type Description Required icon string Specifies the Path to the icon (128x128 px) for store.</description></item></channel></rss>

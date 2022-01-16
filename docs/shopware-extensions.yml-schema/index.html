@@ -1,0 +1,474 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Schema of .shopware-extensions.yml - Docs of shopware cli</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon href=http://sw-cli.fos.gg/favicon.png>
+<link rel=stylesheet href=/css/style.min.6719d72e323121369d5caeb4264b95d8a63cf1deaab029da67602fe5a046e0a4.css>
+</head>
+<body class="page page-default-single">
+<div id=main-menu-mobile class=main-menu-mobile>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+<div class=wrapper>
+<div class=header>
+<div class=container>
+<div class=logo>
+<a href=http://sw-cli.fos.gg/><img alt=Logo src=/images/logo.svg></a>
+</div>
+<div class=logo-mobile>
+<a href=http://sw-cli.fos.gg/><img alt=Logo src=/images/logo-mobile.svg></a>
+</div>
+<div id=main-menu class=main-menu>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+</div>
+</div>
+<div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+<div class=row>
+<div class="col-12 col-md-3 mb-3">
+<div class=sidebar>
+<div class=docs-menu>
+<h4>Docs</h4>
+<ul>
+<li>
+<a href=http://sw-cli.fos.gg/docs/commands/account/>account commands</a>
+</li>
+<li class=active>
+<a href=http://sw-cli.fos.gg/docs/shopware-extensions.yml-schema/>Schema of .shopware-extensions.yml</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-9">
+<h1 class=title>Schema of .shopware-extensions.yml</h1>
+<div class="content anchor-link-enabled">
+<h1 id=objects>Objects</h1>
+<ul>
+<li><a href=#reference-config><code>.shopware-extension.yml</code></a> (root object)</li>
+<li><a href=#reference-store><code>store</code></a></li>
+<li><a href=#reference-storeinfofaqquestion><code>StoreInfoFaqQuestion</code></a></li>
+</ul>
+<hr>
+<p></p>
+<h2 id=shopware-extensionyml>.shopware-extension.yml</h2>
+<p><strong><code>.shopware-extension.yml</code> Properties</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>store</strong></td>
+<td><code>Store</code></td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Additional properties are not allowed.</p>
+<h3 id=configstore>Config.store</h3>
+<ul>
+<li><strong>Type</strong>: <code>Store</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<hr>
+<p></p>
+<h2 id=shopware-cli>shopware-cli</h2>
+<p>Shopware cli extension configuration definition file</p>
+<hr>
+<p></p>
+<h2 id=store>store</h2>
+<p><strong><code>store</code> Properties</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>icon</strong></td>
+<td><code>string</code></td>
+<td>Specifies the Path to the icon (128x128 px) for store.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>availabilities</strong></td>
+<td><code>string</code> <code>[]</code></td>
+<td>Specifies the visibility in stores.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>localizations</strong></td>
+<td><code>string</code> <code>[]</code></td>
+<td>Specifies the languages the extension is translated.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>categories</strong></td>
+<td><code>string</code> <code>[*-2]</code></td>
+<td>Specifies the categories in which the extension can be found.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>default_locale</strong></td>
+<td><code>string</code></td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td><code>string</code></td>
+<td>Specifies the type of this extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>automatic_bugfix_version_compatibility</strong></td>
+<td><code>boolean</code></td>
+<td>Specifies whether the extension should automatically be set compatible with Shopware bugfix versions.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>videos</strong></td>
+<td><code>object</code></td>
+<td>Specifies the links of YouTube-Videos to show or describe the extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>tags</strong></td>
+<td><code>object</code></td>
+<td>Specifies the tags of the extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>highlights</strong></td>
+<td><code>object</code></td>
+<td>Specifies the highlights of the extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>features</strong></td>
+<td><code>object</code></td>
+<td>Specifies the features of the extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>faq</strong></td>
+<td><code>object</code></td>
+<td>Specifies Frequently Asked Questions for the extension.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>description</strong></td>
+<td><code>object</code></td>
+<td>Specifies the description of the extension in store.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>installation_manual</strong></td>
+<td><code>object</code></td>
+<td>Installation manual of the extension in store.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>images</strong></td>
+<td><code>object</code> <code>[1-*]</code></td>
+<td>Specifies images for the extension in the store.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Additional properties are not allowed.</p>
+<h3 id=storeicon>Store.icon</h3>
+<p>Specifies the Path to the icon (128x128 px) for store.</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storeavailabilities>Store.availabilities</h3>
+<p>Specifies the visibility in stores.</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code> <code>[]</code>
+<ul>
+<li>Each element in the array must be unique.</li>
+<li>Each element in the array must be one of the following values:
+<ul>
+<li><code>German</code></li>
+<li><code>International</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storelocalizations>Store.localizations</h3>
+<p>Specifies the languages the extension is translated.</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code> <code>[]</code>
+<ul>
+<li>Each element in the array must be unique.</li>
+<li>Each element in the array must be one of the following values:
+<ul>
+<li><code>de_DE</code></li>
+<li><code>en_GB</code></li>
+<li><code>es_ES</code></li>
+<li><code>fi_FI</code></li>
+<li><code>fr_FR</code></li>
+<li><code>it_IT</code></li>
+<li><code>nb_NO</code></li>
+<li><code>nl_NL</code></li>
+<li><code>pl_PL</code></li>
+<li><code>sv_SE</code></li>
+<li><code>bg_BG</code></li>
+<li><code>cs_CZ</code></li>
+<li><code>pt_PT</code></li>
+<li><code>hy</code></li>
+<li><code>de_CH</code></li>
+<li><code>tr</code></li>
+<li><code>da_DK</code></li>
+<li><code>ru_RU</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storecategories>Store.categories</h3>
+<p>Specifies the categories in which the extension can be found.</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code> <code>[*-2]</code>
+<ul>
+<li>Each element in the array must be unique.</li>
+<li>Each element in the array must be one of the following values:
+<ul>
+<li><code>Administration</code></li>
+<li><code>BackendBearbeitung</code></li>
+<li><code>System</code></li>
+<li><code>SEOOptimierung</code></li>
+<li><code>Bonitaetsprüfung</code></li>
+<li><code>Rechtssicherheit</code></li>
+<li><code>MobileAdministration</code></li>
+<li><code>Auswertung</code></li>
+<li><code>KommentarFeedback</code></li>
+<li><code>Tracking</code></li>
+<li><code>MobileAuswertung</code></li>
+<li><code>Integration</code></li>
+<li><code>Shopsystem</code></li>
+<li><code>PreissuchmaschinenPortale</code></li>
+<li><code>Warenwirtschaft</code></li>
+<li><code>Versand</code></li>
+<li><code>Bezahlung</code></li>
+<li><code>StorefrontDetailanpassungen</code></li>
+<li><code>Sprache</code></li>
+<li><code>Suche</code></li>
+<li><code>HeaderFooter</code></li>
+<li><code>Produktdarstellung</code></li>
+<li><code>UebergreifendeDarstellung</code></li>
+<li><code>Detailseite</code></li>
+<li><code>MenueKategorien</code></li>
+<li><code>Bestellprozess</code></li>
+<li><code>KundenkontoPersonalisierung</code></li>
+<li><code>IconsButons</code></li>
+<li><code>Schriftarten</code></li>
+<li><code>WidgetsSnippets</code></li>
+<li><code>Sonderfunktionen</code></li>
+<li><code>Themes</code></li>
+<li><code>Branche</code></li>
+<li><code>Home+Furnishings</code></li>
+<li><code>FashionBekleidung</code></li>
+<li><code>GartenNatur</code></li>
+<li><code>KosmetikGesundheit</code></li>
+<li><code>EssenTrinken</code></li>
+<li><code>KinderPartyGeschenke</code></li>
+<li><code>SportLifestyleReisen</code></li>
+<li><code>TechnikIT</code></li>
+<li><code>IndustrieGroßhandel</code></li>
+<li><code>MigrationTools</code></li>
+<li><code>Einkaufswelten</code></li>
+<li><code>ConversionOptimierung</code></li>
+<li><code>Extensions</code></li>
+<li><code>MarketingTools</code></li>
+<li><code>B2BExtensions</code></li>
+<li><code>Blog</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storedefault_locale>Store.default_locale</h3>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+<li><strong>Required</strong>: No</li>
+<li><strong>Allowed values</strong>:
+<ul>
+<li><code>"en_GB"</code></li>
+<li><code>"de_DE"</code></li>
+</ul>
+</li>
+</ul>
+<h3 id=storetype>Store.type</h3>
+<p>Specifies the type of this extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+<li><strong>Required</strong>: No</li>
+<li><strong>Allowed values</strong>:
+<ul>
+<li><code>"extension"</code></li>
+<li><code>"theme"</code></li>
+</ul>
+</li>
+</ul>
+<h3 id=storeautomatic_bugfix_version_compatibility>Store.automatic_bugfix_version_compatibility</h3>
+<p>Specifies whether the extension should automatically be set compatible with Shopware bugfix versions.</p>
+<ul>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storevideos>Store.videos</h3>
+<p>Specifies the links of YouTube-Videos to show or describe the extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storetags>Store.tags</h3>
+<p>Specifies the tags of the extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storehighlights>Store.highlights</h3>
+<p>Specifies the highlights of the extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storefeatures>Store.features</h3>
+<p>Specifies the features of the extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storefaq>Store.faq</h3>
+<p>Specifies Frequently Asked Questions for the extension.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storedescription>Store.description</h3>
+<p>Specifies the description of the extension in store.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storeinstallation_manual>Store.installation_manual</h3>
+<p>Installation manual of the extension in store.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<h3 id=storeimages>Store.images</h3>
+<p>Specifies images for the extension in the store.</p>
+<ul>
+<li><strong>Type</strong>: <code>object</code> <code>[1-*]</code></li>
+<li><strong>Required</strong>: No</li>
+</ul>
+<hr>
+<p></p>
+<h2 id=storeinfofaqquestion>StoreInfoFaqQuestion</h2>
+<p><strong><code>StoreInfoFaqQuestion</code> Properties</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>question</strong></td>
+<td><code>string</code></td>
+<td></td>
+<td>✓ Yes</td>
+</tr>
+<tr>
+<td><strong>answer</strong></td>
+<td><code>string</code></td>
+<td></td>
+<td>✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Additional properties are not allowed.</p>
+<h3 id=storeinfofaqquestionquestion>StoreInfoFaqQuestion.question</h3>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+<li><strong>Required</strong>: ✓ Yes</li>
+</ul>
+<h3 id=storeinfofaqquestionanswer>StoreInfoFaqQuestion.answer</h3>
+<ul>
+<li><strong>Type</strong>: <code>string</code></li>
+<li><strong>Required</strong>: ✓ Yes</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=sub-footer>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class=sub-footer-inner>
+<ul>
+<li><a href=https://sw-cli.fos.gg>sw-cli.fos.gg</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script>
+</body>
+</html>
