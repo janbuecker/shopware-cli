@@ -1,5 +1,5 @@
 ---
-title: account commands
+title: Account Commands
 ---
 
 # Account
